@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-
+import ssl
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'BilgeAdamBlog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'BlogDB',
+        'HOST': 'mongodb+srv://admin:Password1@cluster0-tw4uy.mongodb.net/test?retryWrites=true&w=majority', 
+        'USER': 'admin',
+        'PASSWORD': 'Password1' 
     }
 }
 
@@ -113,7 +116,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
- 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
@@ -121,3 +124,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+
+
+ 
