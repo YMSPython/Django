@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,33 +7,33 @@
 <title>Libra | Responsive Personal Blog Template</title>
 
 <!--Bootstrap Element and Grid System-->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
 
 <!--Main Elements CSS-->
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
 
 <!--Font Awesome-->
-<link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="{% static 'fonts/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
 <!--FlexSlider CSS-->
-<link href="bower_components/FlexSlider/flexslider.css" rel="stylesheet" type="text/css">
+<link href="{% static 'bower_components/FlexSlider/flexslider.css' %}" rel="stylesheet" type="text/css">
 
 <!--OWL Carousel CSS-->
-<link href="bower_components/owl.carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="{% static 'bower_components/owl.carousel/assets/owl.carousel.css' %}" rel="stylesheet" type="text/css">
 
 <!--Megafolio CSS-->
-<link href="bower_components/megafolio/css/settings.css" rel="stylesheet" type="text/css">
+<link href="{% static 'bower_components/megafolio/css/settings.css' %}" rel="stylesheet" type="text/css">
 
 <!--FancyBox CSS-->
-<link rel="stylesheet" href="bower_components/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<link rel="stylesheet" href="bower_components/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<link rel="stylesheet" href="bower_components/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<link rel="stylesheet" href="{% static 'bower_components/fancybox/jquery.fancybox.css' %}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{% static 'bower_components/fancybox/helpers/jquery.fancybox-buttons.css' %}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{% static 'bower_components/fancybox/helpers/jquery.fancybox-thumbs.css' %}" type="text/css" media="screen" />
 
 <!--Google Fonts-->
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800%7COpen+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic%7CCourgette&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 <!--Color Scheme Setting-->
-<link href="css/color.css" rel="stylesheet" type="text/css">
+<link href="{% static 'css/color.css' %}" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -45,7 +46,7 @@
     <!--Pre Loading End-->
 	
     <!--Background Start-->
-	<div class="bgimage bgimage-cover" data-image-src="images/upload/bg-image.jpg">
+	<div class="bgimage bgimage-cover" data-image-src="{% static 'images/upload/bg-image.jpg' %}">
     	<div id="particles"></div>
     	<div class="bg-overlay" data-bg-color="#353c40" data-opacity="0.85"></div>
     </div>
@@ -85,7 +86,7 @@
             	<!--Logo Start-->
         		<div class="logo">
                 	<a href="index.html">
-                    	<img src="images/logo.png" alt="logo" />
+                    	<img src="{% static 'images/logo.png' %}" alt="logo" />
                     </a>
                 </div>
                 <!--Logo End-->
@@ -174,7 +175,7 @@
                         	<!--Slider 1 Start-->
                             <li class="img-div-cover">
                             	<div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                            	<img src="images/upload/home-slider01.jpg" alt="slider" />
+                            	<img src="{% static 'images/upload/home-slider01.jpg' %}" alt="slider" />
                                 
                                 <!--Slider Caption Start-->
 								<div class="flex-caption">
@@ -200,7 +201,7 @@
                             <!--Slider 2 Start-->
                             <li class="img-div-cover">
                             	<div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                            	<img src="images/upload/home-slider02.jpg" alt="slider" />
+                            	<img src="{% static 'images/upload/home-slider02.jpg' %}" alt="slider" />
                                 
                                 <!--Slider Caption Start-->
 								<div class="flex-caption">
@@ -226,7 +227,7 @@
                             <!--Slider 3 Start-->
                             <li class="img-div-cover">
                             	<div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                            	<img src="images/upload/home-slider03.jpg" alt="slider" />
+                            	<img src="{% static 'images/upload/home-slider03.jpg' %}" alt="slider" />
                                 
                                 <!--Slider Caption Start-->
 								<div class="flex-caption">
@@ -252,7 +253,7 @@
                             <!--Slider 4 Start-->
                             <li class="img-div-cover">
                             	<div class="home-slide-overlay" data-bg-color="#000" data-opacity="0.15"></div>
-                            	<img src="images/upload/home-slider04.jpg" alt="slider" />
+                            	<img src="{% static 'images/upload/home-slider04.jpg' %}" alt="slider" />
                                 
                                 <!--Slider Caption Start-->
 								<div class="flex-caption">
@@ -305,7 +306,7 @@
                                 	<h3>My Instagram</h3>
                                 </div>
                             	<figure class="img-div-cover">
-                            		<img src="images/upload/home-carousel-image01.jpg" alt="home carousel" />
+                            		<img src="{% static 'images/upload/home-carousel-image01.jpg' %}" alt="home carousel" />
                                 </figure>
                             </a>
                         </div>
@@ -318,7 +319,7 @@
                                 	<h3>Highlight Story</h3>
                                 </div>
                             	<figure class="img-div-cover">
-                            		<img src="images/upload/home-carousel-image02.jpg" alt="home carousel" />
+                            		<img src="{% static 'images/upload/home-carousel-image02.jpg' %}" alt="home carousel" />
                                 </figure>
                             </a>
                         </div>
@@ -331,7 +332,7 @@
                                 	<h3>My inspiration</h3>
                                 </div>
                             	<figure class="img-div-cover">
-                            		<img src="images/upload/home-carousel-image03.jpg" alt="home carousel" />
+                            		<img src="{% static 'images/upload/home-carousel-image03.jpg' %}" alt="home carousel" />
                                 </figure>
                             </a>
                         </div>
@@ -344,7 +345,7 @@
                                 	<h3>Special gallery</h3>
                                 </div>
                             	<figure class="img-div-cover">
-                            		<img src="images/upload/home-carousel-image04.jpg" alt="home carousel" />
+                            		<img src="{% static 'images/upload/home-carousel-image04.jpg' %}" alt="home carousel" />
                                 </figure>
                             </a>
                         </div>
@@ -386,7 +387,7 @@
                                         <a href="#">
                                             <figure>
                                                 <div class="overlay-hover"></div>
-                                                <img src="images/upload/post-img01.jpg" alt="post image" />
+                                                <img src="{% static 'images/upload/post-img01.jpg' %}" alt="post image" />
                                             </figure>
                                         </a>
                                     </div>
@@ -438,22 +439,22 @@
                                             <div class="megafolio-container norounded noborder">
                                             
                                                 <!--Gallery 1-->
-                                                <div class="mega-entry" id="entry-1" data-src="images/upload/post-gallery-imag01.jpg" data-width="800" data-height="600">
-                                                    <a class="fancybox" data-fancybox-group="group1" href="images/upload/post-gallery-imag01.jpg">
+                                                <div class="mega-entry" id="entry-1" data-src="{% static 'images/upload/post-gallery-imag01.jpg' %}" data-width="800" data-height="600">
+                                                    <a class="fancybox" data-fancybox-group="group1" href="{% static 'images/upload/post-gallery-imag01.jpg' %}">
                                                         <div class="mega-overlay-hover"></div>
                                                     </a>
                                                 </div>
                                                 
                                                 <!--Gallery 2-->
-                                                <div class="mega-entry" id="entry-2" data-src="images/upload/post-gallery-imag02.jpg" data-width="800" data-height="600">
-                                                    <a class="fancybox" data-fancybox-group="group1" href="images/upload/post-gallery-imag02.jpg">
+                                                <div class="mega-entry" id="entry-2" data-src="{% static 'images/upload/post-gallery-imag02.jpg' %}" data-width="800" data-height="600">
+                                                    <a class="fancybox" data-fancybox-group="group1" href="{% static 'images/upload/post-gallery-imag02.jpg' %}">
                                                         <div class="mega-overlay-hover"></div>
                                                     </a>
                                                 </div>
                                                 
                                                 <!--Gallery 3-->
-                                                <div class="mega-entry" id="entry-3" data-src="images/upload/post-gallery-imag03.jpg" data-width="800" data-height="600">
-                                                    <a class="fancybox" data-fancybox-group="group1" href="images/upload/post-gallery-imag03.jpg">
+                                                <div class="mega-entry" id="entry-3" data-src="{% static 'images/upload/post-gallery-imag03.jpg' %}" data-width="800" data-height="600">
+                                                    <a class="fancybox" data-fancybox-group="group1" href="{% static 'images/upload/post-gallery-imag03.jpg' %}">
                                                         <div class="mega-overlay-hover"></div>
                                                     </a>
                                                 </div>
@@ -513,40 +514,40 @@
                                                     
                                                     <!--Slide 1-->
                                                     <li>
-                                                        <a class="fancybox" data-fancybox-group="group2" href="images/upload/post-list-slide01.jpg">
+                                                        <a class="fancybox" data-fancybox-group="group2" href="{% static 'images/upload/post-list-slide01.jpg' %}">
                                                             <figure>
                                                                 <div class="overlay-hover"></div>
-                                                                <img src="images/upload/post-list-slide01.jpg" alt="post slide" />
+                                                                <img src="{% static 'images/upload/post-list-slide01.jpg' %}" alt="post slide" />
                                                             </figure>
                                                         </a>
                                                     </li>
                                                     
                                                     <!--Slide 2-->
                                                     <li>
-                                                        <a class="fancybox" data-fancybox-group="group2" href="images/upload/post-list-slide02.jpg">
+                                                        <a class="fancybox" data-fancybox-group="group2" href="{% static 'images/upload/post-list-slide02.jpg' %}">
                                                             <figure>
                                                                 <div class="overlay-hover"></div>
-                                                                <img src="images/upload/post-list-slide02.jpg" alt="post slide" />
+                                                                <img src="{% static 'images/upload/post-list-slide02.jpg' %}" alt="post slide" />
                                                             </figure>
                                                         </a>
                                                     </li>
                                                     
                                                     <!--Slide 3-->
                                                     <li>
-                                                        <a class="fancybox" data-fancybox-group="group2" href="images/upload/post-list-slide03.jpg">
+                                                        <a class="fancybox" data-fancybox-group="group2" href="{% static 'images/upload/post-list-slide03.jpg' %}">
                                                             <figure>
                                                                 <div class="overlay-hover"></div>
-                                                                <img src="images/upload/post-list-slide03.jpg" alt="post slide" />
+                                                                <img src="{% static 'images/upload/post-list-slide03.jpg' %}" alt="post slide" />
                                                             </figure>
                                                         </a>
                                                     </li>
                                                     
                                                     <!--Slide 4-->
                                                     <li>
-                                                        <a class="fancybox" data-fancybox-group="group2" href="images/upload/post-list-slide04.jpg">
+                                                        <a class="fancybox" data-fancybox-group="group2" href="{% static 'images/upload/post-list-slide04.jpg' %}">
                                                             <figure>
                                                                 <div class="overlay-hover"></div>
-                                                                <img src="images/upload/post-list-slide04.jpg" alt="post slide" />
+                                                                <img src="{% static 'images/upload/post-list-slide04.jpg' %}" alt="post slide" />
                                                             </figure>
                                                         </a>
                                                     </li>
@@ -722,7 +723,7 @@
                                 </div>
                                 <div class="widget-detail">
                                     <div class="widget-about-img img-div-cover">
-                                        <img src="images/upload/sidebar-about-me.jpg" alt="about me" />
+                                        <img src="{% static 'images/upload/sidebar-about-me.jpg' %}" alt="about me" />
                                     </div>
                                     <div class="widget-about-detail">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris magna, lacinia ac purus quis, rutrum bibendum leo. Nullam sit amet nibh eu odio ornare.</p>
@@ -753,7 +754,7 @@
                                             <a href="#">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/recent-post01.jpg" alt="recent post" />
+                                                    <img src="{% static 'images/upload/recent-post01.jpg' %}" alt="recent post" />
                                                 </figure>
                                             </a>
                                         </div>
@@ -770,7 +771,7 @@
                                             <a href="#">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/recent-post02.jpg" alt="recent post" />
+                                                    <img src="{% static 'images/upload/recent-post02.jpg' %}" alt="recent post" />
                                                 </figure>
                                             </a>
                                         </div>
@@ -787,7 +788,7 @@
                                             <a href="#">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/recent-post03.jpg" alt="recent post" />
+                                                    <img src="{% static 'images/upload/recent-post03.jpg' %}" alt="recent post" />
                                                 </figure>
                                             </a>
                                         </div>
@@ -804,7 +805,7 @@
                                             <a href="#">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/recent-post04.jpg" alt="recent post" />
+                                                    <img src="{% static 'images/upload/recent-post04.jpg' %}" alt="recent post" />
                                                 </figure>
                                             </a>
                                         </div>
@@ -851,7 +852,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram01.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram01.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -859,7 +860,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram02.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram02.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -867,7 +868,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram03.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram03.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -875,7 +876,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram04.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram04.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -883,7 +884,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram05.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram05.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -891,7 +892,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram06.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram06.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -899,7 +900,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram07.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram07.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -907,7 +908,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram08.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram08.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -915,7 +916,7 @@
                                             <a href="#" target="_blank">
                                                 <figure>
                                                     <div class="overlay-hover"></div>
-                                                    <img src="images/upload/widget-instagram09.jpg" alt="widget instagram" />
+                                                    <img src="{% static 'images/upload/widget-instagram09.jpg' %}" alt="widget instagram" />
                                                 </figure>
                                             </a>
                                         </li>
@@ -954,7 +955,7 @@
                             <aside class="widget widget_banner_sidebar">
                                 <div class="widget-detail">
                                     <a href="#" target="_blank">
-                                        <img src="images/upload/banner-widget.jpg" alt="banner widget" />
+                                        <img src="{% static 'images/upload/banner-widget.jpg' %}" alt="banner widget" />
                                     </a>
                                 </div>
                             </aside>
@@ -1015,7 +1016,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item01.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item01.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1026,7 +1027,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item02.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item02.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1037,7 +1038,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item03.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item03.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1048,7 +1049,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item04.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item04.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1059,7 +1060,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item05.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item05.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1070,7 +1071,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item06.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item06.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1081,7 +1082,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item07.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item07.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1092,7 +1093,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item08.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item08.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1103,7 +1104,7 @@
                                 	<a href="#" target="_blank">
                                     	<figure>
                                         	<div class="overlay-hover"></div>
-                                        	<img src="images/upload/footer-instagram-item09.jpg" alt="instagram" />
+                                        	<img src="{% static 'images/upload/footer-instagram-item09.jpg' %}" alt="instagram" />
                                         </figure>
                                     </a>
                                 </div>
@@ -1132,7 +1133,7 @@
                                 	<aside class="widget widget_about_us">
                                         <div class="widget-detail">
                                         	<div class="widget-about-img img-div-cover">
-                                                <img src="images/footer-logo.png" alt="logo" />
+                                                <img src="{% static 'images/footer-logo.png' %}" alt="logo" />
                                             </div>
                                             <div class="widget-about-detail">
                                                 <p>Vestibulum ante ipsum primis in faucibus luctus et ultrices posuere cubilia curae aliquam dignissim viverra dolor sit condimentum aenean sollicitudin justo eu pulvinar rutrum.</p>
@@ -1236,50 +1237,50 @@
     <!--Whole Container End-->
 
 <!--jQuery files-->
-<script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
-<script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript" src="{% static 'js/vendor/jquery-1.11.3.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/vendor/modernizr.custom.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/search.js' %}"></script>
 
 <!--jQuery Retina-->
-<script type="text/javascript" src="js/retina.js"></script>
+<script type="text/javascript" src="{% static 'js/retina.js' %}"></script>
 
 <!--Particle Background js file-->
-<script type="text/javascript" src="js/jquery.particleground.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.particleground.js' %}"></script>
 
 <!--jQuery FlexSlider-->
-<script type="text/javascript" src="bower_components/FlexSlider/jquery.flexslider.js"></script>
+<script type="text/javascript" src="{% static 'bower_components/FlexSlider/jquery.flexslider.js' %}"></script>
 
 <!--jQuery OWL Carousel-->
-<script type="text/javascript" src="bower_components/owl.carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{% static 'bower_components/owl.carousel/owl.carousel.min.js' %}"></script>
 
 <!--jQuery Megafolio-->
-<script type="text/javascript" src="bower_components/megafolio/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="bower_components/megafolio/js/jquery.themepunch.megafoliopro.js"></script>
+<script type="text/javascript" src="{% static 'bower_components/megafolio/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/megafolio/js/jquery.themepunch.megafoliopro.js' %}"></script>
 
 <!--jQuery FancyBox-->
-<script type="text/javascript" src="bower_components/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-<script type="text/javascript" src="bower_components/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="bower_components/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-<script type="text/javascript" src="bower_components/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="{% static 'bower_components/fancybox/jquery.fancybox.pack.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-buttons.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-media.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/fancybox/helpers/jquery.fancybox-thumbs.js' %}"></script>
 
 <!--jQuery Isotope-->
-<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
 
 <!--jQuery Imageloaded-->
-<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
 
 <!--FitVids js file-->
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
 
 <!--Placeholder js file-->
-<script type="text/javascript" src="js/placeholder.js"></script>
+<script type="text/javascript" src="{% static 'js/placeholder.js' %}"></script>
 
 <!--HC Sticky js file-->
-<script type="text/javascript" src="js/jquery.hc-sticky.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.hc-sticky.min.js' %}"></script>
 
 <!--Custom js file-->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 
 </body>
 </html>
